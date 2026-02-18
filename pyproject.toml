@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glom-explorer"
+version = "0.1.0"
+description = "Interactive exploration of glomerular olfactory bulb data"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "plotly",
+]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab"]
+
+[tool.setuptools.packages.find]
+include = ["glom_explorer*"]
+
+[tool.setuptools.package-data]
+glom_explorer = ["../data/omp8x/*"]
