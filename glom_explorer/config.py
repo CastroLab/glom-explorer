@@ -12,7 +12,7 @@ __all__ = [
 ]
 
 # Resolve bundled data directory relative to this package
-DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "omp8x"
+DATA_DIR = Path(__file__).resolve().parent / "data"
 
 ANALYSIS_DEFAULTS = {
     "n_clusters": 7,

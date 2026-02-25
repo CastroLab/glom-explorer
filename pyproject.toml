@@ -22,4 +22,4 @@ notebook = ["jupyterlab"]
 include = ["glom_explorer*"]
 
 [tool.setuptools.package-data]
-glom_explorer = ["../data/omp8x/*"]
+glom_explorer = ["data/*"]

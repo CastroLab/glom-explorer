@@ -8,7 +8,7 @@ responses to a 59-odorant panel across 4 subjects — all from Jupyter notebooks
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-org>/glom-explorer.git
+git clone https://github.com/CastroLab/glom-explorer.git
 cd glom-explorer
 pip install -e .
 jupyter lab notebooks/
@@ -60,8 +60,8 @@ numpy, pandas, scipy, scikit-learn, plotly
 
 ## Data
 
-All data files are bundled in `data/omp8x/` (~1.5 MB). Pre-computed NMF
-variants are registered in `data/omp8x/variants.json`. To add your own
+All data files are bundled in `glom_explorer/data/` (~1.5 MB). Pre-computed NMF
+variants are registered in `glom_explorer/data/variants.json`. To add your own
 variant, run NMF with a new seed/k, save the clustered CSVs, and call:
 
 ```python
